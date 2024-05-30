@@ -2,7 +2,7 @@ function Fail(){
     
     return(
 
-        <h1>Fail</h1>
+        <h1>Login Failed</h1>
     )
 }
 

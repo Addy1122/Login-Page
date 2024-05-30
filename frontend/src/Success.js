@@ -2,7 +2,7 @@ function Success(){
     
     return(
 
-        <h1>Success</h1>
+        <h1>Login Successfull</h1>
     )
 }
 
