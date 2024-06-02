@@ -8,6 +8,8 @@ function App() {
   const [user,setuser] = useState("")
   const [pass,setpass] = useState("")
 
+  axios.defaults.withCredentials =true;
+
   function handleuser(evt)
   {
 
@@ -22,7 +24,7 @@ function App() {
   }
   function check()
   {
-    var logindetails = axios.post("http://localhost:5000/login",{"username":user,"password":pass})
+    var logindetails = axios.post("https://login-page-server-silk.vercel.app/login",{"username":user,"password":pass})
     logindetails.then(function(data){
       
       if (data.data=== true){
